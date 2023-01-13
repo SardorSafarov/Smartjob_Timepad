@@ -7,3 +7,4 @@ fun D(message:String)
 {
     Log.d("sardor","->>>>>>    $message    <<<<<<-")
 }
+
