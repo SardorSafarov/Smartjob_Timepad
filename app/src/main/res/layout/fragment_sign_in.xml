@@ -58,7 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:paddingHorizontal="@dimen/pm_36dp"
+            android:paddingHorizontal="@dimen/pm_40dp"
             app:layout_constraintBottom_toTopOf="@+id/linearLayoutCompat2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -69,13 +69,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
+                android:fontFamily="@font/fonts_jaldi_bold"
                 android:text="@string/smartjob_timepad"
-                android:textSize="34dp"
+                android:textSize="@dimen/txt_42sp"
                 android:textStyle="bold"
-                app:endColor="#309dfc"
-                app:isVertical="true"
-
-                app:startColor="#0048E4" />
+                app:startColor="#309DFC"
+                app:endColor="#319cfc"
+                app:isVertical="true" />
 
         </LinearLayout>
 
@@ -183,6 +183,8 @@
                 android:layout_marginTop="@dimen/pm_20dp"
                 android:elevation="@dimen/pm_0dp"
                 android:background="@drawable/bg_btn_next"
+                app:elevation="@dimen/pm_0dp"
+
                 android:fontFamily="@font/fonts_inter2"
                 android:text="Davom etish"
                 android:textAllCaps="false"
