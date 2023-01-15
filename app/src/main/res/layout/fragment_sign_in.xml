@@ -100,7 +100,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="Kirish"
+                android:text="@string/kirish"
                 android:textColor="@color/black"
                 android:textSize="@dimen/txt_18sp"
                 android:textStyle="bold" />
@@ -169,11 +169,14 @@
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <TextView
+                android:id="@+id/btn_sign_up"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:layout_marginTop="@dimen/pm_10dp"
+                android:paddingBottom="@dimen/pm_10dp"
                 android:text="Ro`yhatdan o`tish"
+                android:layout_marginBottom="@dimen/pm_10dp"
                 android:textColor="@color/color_text_gren" />
 
             <androidx.appcompat.widget.AppCompatButton

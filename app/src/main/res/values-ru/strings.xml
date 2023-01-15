@@ -3,4 +3,13 @@
     <string name="smartjob_timepad">Smartjob timepad</string>
     <string name="kirish_uchun_telefon_raqamingizni_kiriting">Kirish uchun telefon raqamingizni kiriting</string>
     <string name="telefon_raqam">Telefon raqam</string>
+    <string name="smartjob">Smartjob</string>
+    <string name="kirish">Kirish</string>
+    <string name="ro_yhatdan_o_tish">Ro`yhatdan o`tish</string>
+    <string name="davlatni_tanlang">Davlatni tanlang</string>
+    <string name="pochtani_kiriting">Pochtani kiriting</string>
+    <string name="elektron_pochta">Elektron pochta</string>
+    <string name="nom">Nom</string>
+    <string name="sohasi">Sohasi</string>
+    <string name="xodimlar_soni">Xodimlar soni</string>
 </resources>

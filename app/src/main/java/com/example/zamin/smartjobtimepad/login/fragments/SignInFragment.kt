@@ -6,6 +6,7 @@ import com.example.zamin.smartjobtimepad.BaseFragment
 import com.example.zamin.smartjobtimepad.R
 import com.example.zamin.smartjobtimepad.app.setGradiandColor
 import com.example.zamin.smartjobtimepad.databinding.FragmentSignInBinding
+import com.example.zamin.smartjobtimepad.login.fragments.SignUpFragment
 
 
 class SignInFragment : BaseFragment<FragmentSignInBinding>(FragmentSignInBinding::inflate) {
@@ -20,6 +21,10 @@ class SignInFragment : BaseFragment<FragmentSignInBinding>(FragmentSignInBinding
             btnTelCode.setOnClickListener {
                 requireActivity().supportFragmentManager.beginTransaction().addToBackStack(null).replace(
                   R.id.fragment_login,TelNumberFragment()).commit()
+            }
+            binding.btnSignUp.setOnClickListener {
+                requireActivity().supportFragmentManager.beginTransaction().addToBackStack(null).replace(
+                    R.id.fragment_login,SignUpFragment()).commit()
             }
         }
     }
