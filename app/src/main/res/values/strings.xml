@@ -14,4 +14,14 @@
     <string name="nom">Nom</string>
     <string name="sohasi">Sohasi</string>
     <string name="xodimlar_soni">Xodimlar soni</string>
+    <string name="davom_etish">Davom etish</string>
+    <string name="sayt_foydalanish_shartlari_va_maxfiylik_nsiyosati_bilan_tanishdim">Sayt foydalanish shartlari va maxfiylik\nsiyosati bilan tanishdim</string>
+    <string name="o_zbekiston">O`zbekiston</string>
+    <string name="tashkilot_nomi">Tashkilot nomi</string>
+    <string name="fio">FIO</string>
+    <string name="fio_ni_kiriting">FIO ni kiriting</string>
+    <string name="parol_kiriting">Parol kiriting</string>
+    <string name="parol">Parol</string>
+    <string name="parolni_qayta_kiriting">Parolni qayta kiriting</string>
+    <string name="raqamiga_sms_yuborildi">raqamiga sms yuborildi</string>
 </resources>

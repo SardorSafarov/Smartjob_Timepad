@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login.fragments.SignUpFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".login.fragments.SignUp2Fragment">
+
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -57,95 +58,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/ro_yhatdan_o_tish"
+                    android:text="+99899 123 45 67"
                     android:textColor="@color/black"
                     android:textSize="@dimen/txt_18sp"
                     android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="@dimen/pm_6dp"
-                    android:maxLines="1"
-                    android:text="@string/kirish_uchun_telefon_raqamingizni_kiriting"
-                    android:textColor="#4d5154"
-                    android:textSize="14sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginTop="@dimen/pm_20dp"
-                    android:text="@string/davlatni_tanlang"
-                    android:textColor="#1f1f1f" />
 
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/pm_10dp"
-                    android:background="@drawable/bg_line_radius2"
-                    android:gravity="center_vertical"
-                    android:padding="@dimen/pm_20dp">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/flag_uzbekistan" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="@dimen/pm_10dp"
-                        android:layout_weight="1"
-                        android:text="@string/o_zbekiston"
-                        android:textSize="@dimen/txt_18sp" />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_strelca_buttom" />
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginTop="@dimen/pm_20dp"
-                    android:text="@string/telefon_raqam"
-                    android:textColor="#1f1f1f" />
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/pm_10dp"
-                    android:background="@drawable/bg_line_radius2"
-                    android:gravity="center_vertical"
-                    android:paddingHorizontal="@dimen/pm_10dp">
-
-                    <androidx.appcompat.widget.LinearLayoutCompat
-                        android:id="@+id/btn_tel_code"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginStart="@dimen/pm_5dp"
-                        android:gravity="center">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="+998"
-                            android:textColor="#2b2d33"
-                            android:textSize="@dimen/txt_18sp" />
-                    </androidx.appcompat.widget.LinearLayoutCompat>
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="@color/white"
-                        android:inputType="phone"
-                        android:maxLines="1" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -179,7 +98,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:layout_marginTop="@dimen/pm_20dp"
-                    android:text="@string/tashkilot_nomi"
+                    android:text="@string/fio"
                     android:textColor="#1f1f1f" />
 
                 <androidx.appcompat.widget.LinearLayoutCompat
@@ -195,7 +114,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:backgroundTint="@color/white"
-                        android:hint="@string/nom"
+                        android:hint="@string/fio_ni_kiriting"
                         android:maxLines="1" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
@@ -205,7 +124,33 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:layout_marginTop="@dimen/pm_20dp"
-                    android:text="@string/sohasi"
+                    android:text="@string/parol_kiriting"
+                    android:textColor="#1f1f1f" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pm_10dp"
+                    android:background="@drawable/bg_line_radius2"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/pm_10dp">
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:hint="@string/parol"
+                        android:maxLines="1" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/pm_20dp"
+                    android:text="@string/parolni_qayta_kiriting"
                     android:textColor="#1f1f1f" />
 
                 <androidx.appcompat.widget.LinearLayoutCompat
@@ -222,43 +167,11 @@
                         android:layout_height="wrap_content"
                         android:backgroundTint="@color/white"
                         android:drawableEnd="@drawable/ic_strelca_buttom"
-                        android:hint="@string/nom"
+                        android:hint="@string/parol"
                         android:maxLines="1" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginTop="@dimen/pm_20dp"
-                    android:text="@string/xodimlar_soni"
-                    android:textColor="#1f1f1f" />
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/pm_10dp"
-                    android:background="@drawable/bg_line_radius2"
-                    android:gravity="center_vertical"
-                    android:paddingHorizontal="@dimen/pm_10dp">
-
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="@color/white"
-                        android:drawableEnd="@drawable/ic_strelca_buttom"
-                        android:hint="1-5"
-                        android:maxLines="1" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/color_text_gren"
-                    android:text="@string/sayt_foydalanish_shartlari_va_maxfiylik_nsiyosati_bilan_tanishdim"
-                    />
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btn_next"
                     android:layout_width="match_parent"
@@ -279,6 +192,5 @@
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
