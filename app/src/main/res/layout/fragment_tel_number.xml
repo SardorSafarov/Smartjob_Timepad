@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".login.fragment.TelNumberFragment">
+
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:layout_height="wrap_content">
         <ImageView
+            android:id="@+id/btn_cancel"
             android:layout_width="wrap_content"
             android:src="@drawable/ic_strelka_left"
             android:padding="@dimen/pm_10dp"
             android:layout_height="wrap_content"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -24,9 +27,20 @@
             android:textStyle="bold"
             android:gravity="center"
             android:textSize="@dimen/txt_22sp"
-            android:layout_gravity="center_horizontal"
-            />
+            android:layout_gravity="center_horizontal" />
     </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/pm_10dp"
+        android:hint="Qidrish"
+        android:padding="@dimen/pm_20dp"
+        android:layout_marginTop="@dimen/pm_10dp"
+        android:background="@drawable/bg_line_radius2"
+        android:drawableRight="@drawable/ic_baseline_search_24"
+        android:layoutDirection="rtl"
+        app:iconifiedByDefault="false" />
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>

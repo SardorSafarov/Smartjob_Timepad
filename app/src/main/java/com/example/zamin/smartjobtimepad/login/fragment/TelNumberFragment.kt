@@ -12,7 +12,15 @@ import com.example.zamin.smartjobtimepad.databinding.FragmentTelNumberBinding
 class TelNumberFragment : BaseFragment<FragmentTelNumberBinding>(FragmentTelNumberBinding::inflate) {
 
     override fun onViewCreate() {
+    onClick()
+    }
 
+    private fun onClick() {
+        binding.apply {
+            btnCancel.setOnClickListener {
+                requireActivity().supportFragmentManager.beginTransaction().replace(R.id.fragment_login,SignInFragment()).commit()
+            }
+        }
     }
 
 
