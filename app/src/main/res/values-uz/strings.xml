@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Smartjob Timepad</string>
     <string name="smartjob_timepad">Smartjob timepad</string>
     <string name="kirish_uchun_telefon_raqamingizni_kiriting">Kirish uchun telefon raqamingizni kiriting</string>
     <string name="telefon_raqam">Telefon raqam</string>
