@@ -29,4 +29,5 @@
     <string name="tasdiqlash">Tasdiqlash</string>
     <string name="kodni_yana_yuboring">Kodni yana yuboring</string>
     <string name="kodni_olish_uchun_telefon_raqami_talab_qilinadi_sms_orqali">Kodni olish uchun telefon raqami talab qilinadi SMS orqali</string>
+    <string name="qr_kod_orqali_kirish">QR kod orqali kirish</string>
 </resources>

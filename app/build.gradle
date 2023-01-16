@@ -46,5 +46,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation 'com.github.veeyaarVR:SuperGradientTextView:1.1'
     //Qr code
-    implementation 'androidmads.library.qrgenerator:QRGenerator:1.0.3'
+    implementation 'com.budiyev.android:code-scanner:2.1.0'
 }

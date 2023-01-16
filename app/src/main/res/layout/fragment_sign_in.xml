@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:padding="@dimen/pm_20dp"
     android:layout_height="match_parent"
     tools:context=".login.fragment.SignInFragment">
 
@@ -195,11 +196,12 @@
                 android:textStyle="normal" />
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_qr_code"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/pm_10dp"
                 android:background="@drawable/bg_line_radius2"
-                android:text="QR kod orqali kirish"
+                android:text="@string/qr_kod_orqali_kirish"
                 android:textAllCaps="false"
                 android:textColor="@color/color_text_gren" />
 
