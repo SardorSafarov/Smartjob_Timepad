@@ -62,37 +62,6 @@
                     android:textColor="@color/black"
                     android:textSize="@dimen/txt_18sp"
                     android:textStyle="bold" />
-
-
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginTop="@dimen/pm_20dp"
-                    android:text="@string/elektron_pochta"
-                    android:textColor="#1f1f1f" />
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/pm_10dp"
-                    android:background="@drawable/bg_line_radius2"
-                    android:gravity="center_vertical"
-                    android:paddingHorizontal="@dimen/pm_10dp">
-
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="@color/white"
-                        android:hint="@string/pochtani_kiriting"
-                        android:inputType="textEmailAddress"
-                        android:maxLines="1" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
