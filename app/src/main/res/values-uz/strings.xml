@@ -22,4 +22,11 @@
     <string name="parol">Parol</string>
     <string name="parolni_qayta_kiriting">Parolni qayta kiriting</string>
     <string name="raqamiga_sms_yuborildi">raqamiga sms yuborildi</string>
+    <string name="parolni_tiklash">Parolni tiklash</string>
+    <string name="telefon_raqamini_kiriting">Telefon raqamini kiriting:</string>
+    <string name="kodni_kiriting">Kodni kiriting:</string>
+    <string name="faollashtirish_kodi">Faollashtirish kodi</string>
+    <string name="tasdiqlash">Tasdiqlash</string>
+    <string name="kodni_yana_yuboring">Kodni yana yuboring</string>
+    <string name="kodni_olish_uchun_telefon_raqami_talab_qilinadi_sms_orqali">Kodni olish uchun telefon raqami talab qilinadi SMS orqali</string>
 </resources>

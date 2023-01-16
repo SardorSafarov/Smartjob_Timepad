@@ -72,7 +72,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layout_marginTop="@dimen/pm_20dp"
-                android:text="Kodni kiriting:"
+                android:text="@string/kodni_kiriting"
                 android:textColor="#1f1f1f" />
 
             <androidx.appcompat.widget.LinearLayoutCompat
@@ -88,7 +88,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/white"
-                    android:hint="@string/pochtani_kiriting"
+                    android:hint="@string/faollashtirish_kodi"
                     android:maxLines="1" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
@@ -99,7 +99,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layout_marginTop="@dimen/pm_10dp"
-                android:text="Kodni yana yuboring "
+                android:text="@string/kodni_yana_yuboring"
                 android:textColor="#1f1f1f" />
 
             <androidx.appcompat.widget.AppCompatButton
@@ -110,7 +110,7 @@
                 android:background="@drawable/bg_btn_next"
                 android:elevation="@dimen/pm_0dp"
                 android:fontFamily="@font/fonts_inter2"
-                android:text="Tasdiqlash"
+                android:text="@string/tasdiqlash"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="@dimen/txt_18sp"
