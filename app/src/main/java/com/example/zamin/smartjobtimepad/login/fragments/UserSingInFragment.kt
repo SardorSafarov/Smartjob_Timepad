@@ -8,11 +8,12 @@ import android.view.ViewGroup
 import com.example.zamin.smartjobtimepad.BaseFragment
 import com.example.zamin.smartjobtimepad.R
 import com.example.zamin.smartjobtimepad.app.setGradiandColor
-import com.example.zamin.smartjobtimepad.databinding.FragmentCheckPhoneCodeBinding
+import com.example.zamin.smartjobtimepad.databinding.FragmentUserSingInBinding
 
-class CheckPhoneCodeFragment : BaseFragment<FragmentCheckPhoneCodeBinding>(FragmentCheckPhoneCodeBinding::inflate) {
+class UserSingInFragment : BaseFragment<FragmentUserSingInBinding>(FragmentUserSingInBinding::inflate) {
     override fun onViewCreate() {
-        binding.txt.setGradiandColor()
+    binding.txt.setGradiandColor()
+    binding.txt1.setGradiandColor()
     }
 
 }

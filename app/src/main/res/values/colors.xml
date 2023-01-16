@@ -11,5 +11,6 @@
     <color name="color_text_gren">#1F1F1F</color>
     <color name="dark_blue">#3e77f5</color>
     <color name="light_blue">#309cfc</color>
+    <color name="btn_next_color">#2b64f3</color>
 
 </resources>

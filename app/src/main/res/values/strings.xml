@@ -32,4 +32,8 @@
     <string name="kodni_yana_yuboring">Kodni yana yuboring</string>
     <string name="kodni_olish_uchun_telefon_raqami_talab_qilinadi_sms_orqali">Kodni olish uchun telefon raqami talab qilinadi SMS orqali</string>
     <string name="qr_kod_orqali_kirish">QR kod orqali kirish</string>
+    <string name="smartjob_attandance">Smartjob attandance</string>
+    <string name="fece_id">Fece ID</string>
+    <string name="pin_kod_va_parol">Pin kod va parol</string>
+    <string name="qr_kodni_scannerlash">QR kodni scannerlash</string>
 </resources>

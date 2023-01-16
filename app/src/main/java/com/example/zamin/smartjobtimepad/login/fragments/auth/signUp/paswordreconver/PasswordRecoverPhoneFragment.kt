@@ -1,4 +1,4 @@
-package com.example.zamin.smartjobtimepad.login.fragments.paswordreconver
+package com.example.zamin.smartjobtimepad.login.fragments.auth.signUp.paswordreconver
 
 import com.example.zamin.smartjobtimepad.BaseFragment
 import com.example.zamin.smartjobtimepad.R

@@ -4,8 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.zamin.smartjobtimepad.R
 import com.example.zamin.smartjobtimepad.databinding.ActivityLoginBinding
-import com.example.zamin.smartjobtimepad.login.fragment.SignInFragment
-import com.example.zamin.smartjobtimepad.login.fragments.paswordreconver.PasswordRecoverPhoneFragment
+import com.example.zamin.smartjobtimepad.login.fragments.auth.signIn.SignInFragment
 
 
 class LoginActivity : AppCompatActivity() {

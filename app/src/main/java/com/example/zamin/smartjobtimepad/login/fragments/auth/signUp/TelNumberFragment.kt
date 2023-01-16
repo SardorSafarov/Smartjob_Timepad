@@ -1,8 +1,10 @@
-package com.example.zamin.smartjobtimepad.login.fragment
+package com.example.zamin.smartjobtimepad.login.fragments.auth.signUp
 
 import com.example.zamin.smartjobtimepad.BaseFragment
 import com.example.zamin.smartjobtimepad.R
 import com.example.zamin.smartjobtimepad.databinding.FragmentTelNumberBinding
+import com.example.zamin.smartjobtimepad.login.fragments.auth.signIn.SignInFragment
+
 
 class TelNumberFragment : BaseFragment<FragmentTelNumberBinding>(FragmentTelNumberBinding::inflate) {
 

@@ -6,10 +6,6 @@ import android.graphics.LinearGradient
 import android.graphics.Shader
 import android.util.Log
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
-import com.example.zamin.smartjobtimepad.R
-import com.example.zamin.smartjobtimepad.login.fragments.SignUp2Fragment
 
 
 fun D(message:String)

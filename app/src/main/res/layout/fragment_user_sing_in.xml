@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.fragments.UserSingInFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/pm_20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/pm_6dp"
+            android:src="@drawable/ic_notf" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_lock" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pm_20dp"
+            android:fontFamily="@font/fonts_jaldi_bold"
+            android:maxLines="1"
+            android:text="@string/smartjob_attandance"
+            android:textSize="@dimen/txt_42sp"
+            android:textStyle="bold"
+            app:isVertical="true" />
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fonts_jaldi_bold"
+            android:maxLines="1"
+            android:text="8:45"
+            android:textSize="@dimen/txt_42sp"
+            android:textStyle="bold"
+            app:isVertical="true" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fonts_jaldi_bold"
+            android:maxLines="1"
+            android:text="Dushanba | 09.01.2023"
+            android:textColor="#788895"
+            android:textSize="@dimen/txt_22sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/pm_20dp"
+            android:background="@drawable/ic_ellipse"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/pm_50dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_next"
+                android:backgroundTint="@color/white"
+                android:elevation="@dimen/pm_0dp"
+                android:fontFamily="@font/fonts_inter2"
+                android:text="@string/fece_id"
+                android:textAllCaps="false"
+                android:textColor="@color/dark_blue"
+                android:textSize="@dimen/txt_18sp"
+                android:textStyle="bold"
+                app:elevation="@dimen/pm_0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:id="@+id/appCompatButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_next"
+                android:backgroundTint="@color/white"
+                android:elevation="@dimen/pm_0dp"
+                android:fontFamily="@font/fonts_inter2"
+                android:text="@string/qr_kodni_scannerlash"
+                android:textAllCaps="false"
+                android:textColor="@color/dark_blue"
+                android:textSize="@dimen/txt_18sp"
+                android:textStyle="bold"
+                app:elevation="@dimen/pm_0dp"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatButton"
+                app:layout_constraintStart_toStartOf="@+id/appCompatButton"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatButton" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_next"
+                android:backgroundTint="@color/white"
+                android:elevation="@dimen/pm_0dp"
+                android:fontFamily="@font/fonts_inter2"
+                android:text="@string/pin_kod_va_parol"
+                android:textAllCaps="false"
+                android:textColor="@color/dark_blue"
+                android:textSize="@dimen/txt_18sp"
+                android:textStyle="bold"
+                app:elevation="@dimen/pm_0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatButton2"
+                app:layout_constraintStart_toStartOf="@+id/appCompatButton2"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatButton2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

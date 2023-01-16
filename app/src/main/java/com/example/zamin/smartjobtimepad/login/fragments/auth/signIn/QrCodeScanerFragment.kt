@@ -1,4 +1,4 @@
-package com.example.zamin.smartjobtimepad.login.fragments
+package com.example.zamin.smartjobtimepad.login.fragments.auth.signIn
 
 import android.os.Build
 import android.view.WindowManager
@@ -11,6 +11,7 @@ class QrCodeScanerFragment : BaseFragment<FragmentQrCodeScanerBinding>(FragmentQ
     private val codeScanner: CodeScanner by lazy { CodeScanner(requireContext(), binding.qrCode) }
     override fun onViewCreate() {
         cameraPerimetion()
+        startScaneer()
         setOnClick()
     }
 
@@ -32,7 +33,7 @@ class QrCodeScanerFragment : BaseFragment<FragmentQrCodeScanerBinding>(FragmentQ
             requireActivity().getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         }
-        startScaneer()
+
     }
 
     fun startScaneer() {

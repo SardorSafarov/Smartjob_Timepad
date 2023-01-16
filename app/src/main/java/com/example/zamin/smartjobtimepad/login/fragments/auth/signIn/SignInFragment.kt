@@ -1,4 +1,4 @@
-package com.example.zamin.smartjobtimepad.login.fragment
+package com.example.zamin.smartjobtimepad.login.fragments.auth.signIn
 
 
 
@@ -9,8 +9,9 @@ import com.example.zamin.smartjobtimepad.BaseFragment
 import com.example.zamin.smartjobtimepad.R
 import com.example.zamin.smartjobtimepad.app.setGradiandColor
 import com.example.zamin.smartjobtimepad.databinding.FragmentSignInBinding
-import com.example.zamin.smartjobtimepad.login.fragments.QrCodeScanerFragment
-import com.example.zamin.smartjobtimepad.login.fragments.SignUpFragment
+import com.example.zamin.smartjobtimepad.login.fragments.UserSingInFragment
+import com.example.zamin.smartjobtimepad.login.fragments.auth.signUp.SignUpFragment
+import com.example.zamin.smartjobtimepad.login.fragments.auth.signUp.TelNumberFragment
 
 
 class SignInFragment : BaseFragment<FragmentSignInBinding>(FragmentSignInBinding::inflate) {
@@ -25,15 +26,19 @@ class SignInFragment : BaseFragment<FragmentSignInBinding>(FragmentSignInBinding
         binding.apply {
             btnTelCode.setOnClickListener {
                 requireActivity().supportFragmentManager.beginTransaction().addToBackStack(null).replace(
-                  R.id.fragment_login,TelNumberFragment()).commit()
+                  R.id.fragment_login, TelNumberFragment()).commit()
             }
             btnSignUp.setOnClickListener {
                 requireActivity().supportFragmentManager.beginTransaction().addToBackStack(null).replace(
-                    R.id.fragment_login,SignUpFragment()).commit()
+                    R.id.fragment_login, SignUpFragment()).commit()
             }
             btnQrCode.setOnClickListener {
                 requireActivity().supportFragmentManager.beginTransaction().addToBackStack(null).replace(
-                    R.id.fragment_login,QrCodeScanerFragment()).commit()
+                    R.id.fragment_login, QrCodeScanerFragment()).commit()
+            }
+            btnNext.setOnClickListener {
+                requireActivity().supportFragmentManager.beginTransaction().addToBackStack(null).replace(
+                    R.id.fragment_login, UserSingInFragment()).commit()
             }
         }
 
