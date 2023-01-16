@@ -17,17 +17,18 @@
         app:frameThickness="2dp"
         />
     <LinearLayout
-        android:layout_marginTop="@dimen/pm_20dp"
+        android:layout_marginTop="@dimen/pm_30dp"
         android:layout_width="wrap_content"
-        android:padding="@dimen/pm_20dp"
         android:layout_height="wrap_content">
         <ImageView
             android:layout_width="wrap_content"
+            android:padding="@dimen/pm_10dp"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_camera"
             />
         <ImageView
-            android:paddingStart="@dimen/pm_20dp"
+            android:id="@+id/btn_flash"
+            android:padding="@dimen/pm_10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_flash"
@@ -37,7 +38,8 @@
             android:layout_weight="1"
             android:layout_height="0dp"/>
         <ImageView
-            android:paddingStart="@dimen/pm_20dp"
+            android:id="@+id/btn_cancel"
+            android:padding="@dimen/pm_10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_cancel"

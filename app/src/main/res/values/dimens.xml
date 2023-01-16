@@ -14,4 +14,5 @@
     <dimen name="pm_36dp">36dp</dimen>
     <dimen name="pm_0dp">0dp</dimen>
     <dimen name="pm_40dp">40dp</dimen>
+    <dimen name="pm_30dp">30dp</dimen>
 </resources>
