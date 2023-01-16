@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
-        android:padding="@dimen/pm_20dp"
+        android:layout_marginHorizontal="@dimen/pm_10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -20,7 +20,7 @@
             android:id="@+id/btn_info"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="@dimen/pm_6dp"
+            android:padding="@dimen/pm_10dp"
             android:src="@drawable/ic_info" />
 
         <View
@@ -31,6 +31,7 @@
 
         <ImageView
             android:layout_width="wrap_content"
+            android:padding="@dimen/pm_10dp"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_lock" />
     </androidx.appcompat.widget.LinearLayoutCompat>

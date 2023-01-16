@@ -2,6 +2,7 @@ package com.example.zamin.smartjobtimepad.login.fragments.auth.signIn
 
 
 
+import UserSingInFragment
 import android.content.pm.PackageManager
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -9,7 +10,6 @@ import com.example.zamin.smartjobtimepad.BaseFragment
 import com.example.zamin.smartjobtimepad.R
 import com.example.zamin.smartjobtimepad.app.setGradiandColor
 import com.example.zamin.smartjobtimepad.databinding.FragmentSignInBinding
-import com.example.zamin.smartjobtimepad.login.fragments.UserSingInFragment
 import com.example.zamin.smartjobtimepad.login.fragments.auth.signUp.SignUpFragment
 import com.example.zamin.smartjobtimepad.login.fragments.auth.signUp.TelNumberFragment
 
