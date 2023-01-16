@@ -16,4 +16,5 @@
     <dimen name="pm_40dp">40dp</dimen>
     <dimen name="pm_30dp">30dp</dimen>
     <dimen name="pm_100dp">100dp</dimen>
+    <dimen name="txt_32sp">32sp</dimen>
 </resources>
