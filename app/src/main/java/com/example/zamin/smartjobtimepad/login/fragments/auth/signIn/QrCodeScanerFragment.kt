@@ -10,7 +10,6 @@ class QrCodeScanerFragment : BaseFragment<FragmentQrCodeScanerBinding>(FragmentQ
     var flash = true
     private val codeScanner: CodeScanner by lazy { CodeScanner(requireContext(), binding.qrCode) }
     override fun onViewCreate() {
-        cameraPerimetion()
         startScaneer()
         setOnClick()
     }
@@ -28,13 +27,6 @@ class QrCodeScanerFragment : BaseFragment<FragmentQrCodeScanerBinding>(FragmentQ
         }
     }
 
-    private fun cameraPerimetion() {
-        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.KITKAT) {
-            requireActivity().getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
-                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
-        }
-
-    }
 
     fun startScaneer() {
         binding.apply {

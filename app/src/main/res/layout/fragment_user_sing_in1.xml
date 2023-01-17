@@ -11,7 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
-
         android:layout_marginHorizontal="@dimen/pm_10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -113,12 +112,12 @@
             android:textSize="@dimen/txt_18sp"
             android:textStyle="bold"
             app:elevation="@dimen/pm_0dp"
-            app:layout_constraintBottom_toTopOf="@+id/appCompatButton2"
-            app:layout_constraintEnd_toEndOf="@+id/appCompatButton2"
-            app:layout_constraintStart_toStartOf="@+id/appCompatButton2" />
+            app:layout_constraintBottom_toTopOf="@+id/btn_qr_code"
+            app:layout_constraintEnd_toEndOf="@+id/btn_qr_code"
+            app:layout_constraintStart_toStartOf="@+id/btn_qr_code" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/appCompatButton2"
+            android:id="@+id/btn_qr_code"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/bg_btn_next"
@@ -140,6 +139,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_pin"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/pm_20dp"
@@ -153,9 +153,9 @@
             android:textSize="@dimen/txt_18sp"
             android:textStyle="bold"
             app:elevation="@dimen/pm_0dp"
-            app:layout_constraintEnd_toEndOf="@+id/appCompatButton2"
-            app:layout_constraintStart_toStartOf="@+id/appCompatButton2"
-            app:layout_constraintTop_toBottomOf="@+id/appCompatButton2" />
+            app:layout_constraintEnd_toEndOf="@+id/btn_qr_code"
+            app:layout_constraintStart_toStartOf="@+id/btn_qr_code"
+            app:layout_constraintTop_toBottomOf="@+id/btn_qr_code" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

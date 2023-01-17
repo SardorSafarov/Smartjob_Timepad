@@ -1,13 +1,11 @@
 package com.example.zamin.smartjobtimepad.login.fragments.user.signIn
-import android.app.Dialog
-import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
-import android.widget.LinearLayout
 import com.example.zamin.smartjobtimepad.BaseFragment
 import com.example.zamin.smartjobtimepad.R
+import com.example.zamin.smartjobtimepad.app.dialogInfo
 import com.example.zamin.smartjobtimepad.app.setGradiandColor
-import com.example.zamin.smartjobtimepad.databinding.AlertDialogInfoBinding
 import com.example.zamin.smartjobtimepad.databinding.FragmentUserSingIn1Binding
+import com.example.zamin.smartjobtimepad.login.fragments.auth.signIn.QrCodeScanerFragment
+import com.example.zamin.smartjobtimepad.login.fragments.user.check.CheckUserPinFragment
 
 
 class UserSingInFragment1 : BaseFragment<FragmentUserSingIn1Binding>(FragmentUserSingIn1Binding::inflate) {
@@ -19,22 +17,22 @@ class UserSingInFragment1 : BaseFragment<FragmentUserSingIn1Binding>(FragmentUse
     private fun setOnClick() {
         binding.apply {
             btnInfo.setOnClickListener {
-                dialogInfo()
+                dialogInfo(requireActivity())
+            }
+            btnPin.setOnClickListener {
+                requireActivity().supportFragmentManager.beginTransaction().addToBackStack("")
+                    .replace(
+                        R.id.fragment_login, CheckUserPinFragment()).commit()
+            }
+            btnQrCode.setOnClickListener {
+                requireActivity().supportFragmentManager.beginTransaction().addToBackStack("")
+                    .replace(
+                        R.id.fragment_login, QrCodeScanerFragment()).commit()
             }
 
+
         }
     }
 
-    private fun dialogInfo() {
-        val dialog = Dialog(requireContext())
-        val view = LinearLayout.inflate(requireContext(),R.layout.alert_dialog_info,null)
-        val dialogBinding = AlertDialogInfoBinding.bind(view)
-        dialog.setContentView(dialogBinding.root)
-        dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
-        dialogBinding.btnCancel.setOnClickListener {
-            dialog.dismiss()
-        }
-        dialog.show()
-    }
 
 }
