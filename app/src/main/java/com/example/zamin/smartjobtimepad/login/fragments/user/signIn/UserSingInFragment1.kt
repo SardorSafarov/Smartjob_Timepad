@@ -1,4 +1,4 @@
-
+package com.example.zamin.smartjobtimepad.login.fragments.user.signIn
 import android.app.Dialog
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
@@ -7,17 +7,15 @@ import com.example.zamin.smartjobtimepad.BaseFragment
 import com.example.zamin.smartjobtimepad.R
 import com.example.zamin.smartjobtimepad.app.setGradiandColor
 import com.example.zamin.smartjobtimepad.databinding.AlertDialogInfoBinding
-import com.example.zamin.smartjobtimepad.databinding.FragmentUserSingInBinding
+import com.example.zamin.smartjobtimepad.databinding.FragmentUserSingIn1Binding
 
 
-class UserSingInFragment : BaseFragment<FragmentUserSingInBinding>(FragmentUserSingInBinding::inflate) {
+class UserSingInFragment1 : BaseFragment<FragmentUserSingIn1Binding>(FragmentUserSingIn1Binding::inflate) {
     override fun onViewCreate() {
     binding.txt.setGradiandColor()
     binding.txt1.setGradiandColor()
         setOnClick()
     }
-
-
     private fun setOnClick() {
         binding.apply {
             btnInfo.setOnClickListener {

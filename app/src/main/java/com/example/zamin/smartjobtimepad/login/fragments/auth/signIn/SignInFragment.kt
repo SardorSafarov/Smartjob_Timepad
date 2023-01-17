@@ -2,7 +2,7 @@ package com.example.zamin.smartjobtimepad.login.fragments.auth.signIn
 
 
 
-import UserSingInFragment
+import com.example.zamin.smartjobtimepad.login.fragments.user.signIn.UserSingInFragment1
 import android.content.pm.PackageManager
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -38,7 +38,7 @@ class SignInFragment : BaseFragment<FragmentSignInBinding>(FragmentSignInBinding
             }
             btnNext.setOnClickListener {
                 requireActivity().supportFragmentManager.beginTransaction().addToBackStack(null).replace(
-                    R.id.fragment_login, UserSingInFragment()).commit()
+                    R.id.fragment_login, UserSingInFragment1()).commit()
             }
         }
 
