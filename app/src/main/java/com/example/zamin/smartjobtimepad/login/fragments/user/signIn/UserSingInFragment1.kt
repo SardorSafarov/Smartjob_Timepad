@@ -1,5 +1,7 @@
 package com.example.zamin.smartjobtimepad.login.fragments.user.signIn
+import android.content.Intent
 import com.example.zamin.smartjobtimepad.BaseFragment
+import com.example.zamin.smartjobtimepad.MainActivity
 import com.example.zamin.smartjobtimepad.R
 import com.example.zamin.smartjobtimepad.app.dialogInfo
 import com.example.zamin.smartjobtimepad.app.setGradiandColor
@@ -31,9 +33,7 @@ class UserSingInFragment1 : BaseFragment<FragmentUserSingIn1Binding>(FragmentUse
                         R.id.fragment_login, QrCodeScanerFragment()).commit()
             }
             btnFaceId.setOnClickListener {
-                requireActivity().supportFragmentManager.beginTransaction().addToBackStack("")
-                    .replace(
-                        R.id.fragment_login, CheckUserFaceIDFragment()).commit()
+             startActivity(Intent(requireContext(),MainActivity::class.java))
             }
 
 

@@ -2,6 +2,7 @@ package com.example.zamin.smartjobtimepad
 
 import android.Manifest
 import android.content.pm.PackageManager
+import android.graphics.Color
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -34,25 +35,22 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        // hide the action bar
-        supportActionBar?.hide()
-
-        // Check camera permissions if all permission granted
-        // start camera else ask for the permission
+        window.statusBarColor = Color.parseColor("#2b64f3")
         if (allPermissionsGranted()) {
             startCamera()
         } else {
             ActivityCompat.requestPermissions(this, REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS)
         }
-
         // set on click listener for the button of capture photo
         // it calls a method which is implemented below
-        findViewById<Button>(R.id.camera_capture_button).setOnClickListener {
-            takePhoto()
-        }
+//        findViewById<Button>(R.id.camera_capture_button).setOnClickListener {
+//            takePhoto()
+//        }
         outputDirectory = getOutputDirectory()
         cameraExecutor = Executors.newSingleThreadExecutor()
+        binding.btnCancel.setOnClickListener {
+            finish()
+        }
     }
 
     private fun takePhoto() {
@@ -84,8 +82,7 @@ class MainActivity : AppCompatActivity() {
                     val savedUri = Uri.fromFile(photoFile)
 
                     // set the saved uri to the image view
-                    findViewById<ImageView>(R.id.iv_capture).visibility = View.VISIBLE
-                    findViewById<ImageView>(R.id.iv_capture).setImageURI(savedUri)
+
 
                     val msg = "Photo capture succeeded: $savedUri"
                     Toast.makeText(baseContext, msg, Toast.LENGTH_LONG).show()
@@ -106,7 +103,7 @@ class MainActivity : AppCompatActivity() {
             val preview = Preview.Builder()
                 .build()
                 .also {
-                    it.setSurfaceProvider(binding.viewFinder.createSurfaceProvider())
+                    it.setSurfaceProvider(binding.cameraView.createSurfaceProvider())
                 }
 
             imageCapture = ImageCapture.Builder().build()
@@ -174,5 +171,7 @@ class MainActivity : AppCompatActivity() {
         super.onDestroy()
         cameraExecutor.shutdown()
     }
+
+
 }
 
