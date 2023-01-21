@@ -97,10 +97,9 @@
         app:layout_constraintTop_toTopOf="@+id/guideline2">
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/appCompatButton"
+            android:id="@+id/btn_face_id"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-
             android:layout_marginBottom="@dimen/pm_20dp"
             android:background="@drawable/bg_btn_next"
             android:backgroundTint="@color/white"
@@ -123,7 +122,6 @@
             android:background="@drawable/bg_btn_next"
             android:backgroundTint="@color/white"
             android:elevation="@dimen/pm_0dp"
-
             android:fontFamily="@font/fonts_inter2"
             android:paddingHorizontal="@dimen/pm_50dp"
             android:text="@string/qr_kodni_scannerlash"

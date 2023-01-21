@@ -1,7 +1,6 @@
 package com.example.zamin.smartjobtimepad.login.fragments.auth.signIn
 
-import android.os.Build
-import android.view.WindowManager
+
 import com.budiyev.android.codescanner.*
 import com.example.zamin.smartjobtimepad.BaseFragment
 import com.example.zamin.smartjobtimepad.databinding.FragmentQrCodeScanerBinding

@@ -41,4 +41,9 @@
     <string name="pin_kod">Pin kod</string>
     <string name="pin_kodni_kiring">Pin kodni kiring</string>
     <string name="chiqish">Chiqish</string>
+    <string name="kirish_vaqti">Kirish vaqti</string>
+    <string name="kirish_09_00">Kirish - 09:00</string>
+    <string name="chiqish_18_00">Chiqish - 18:00</string>
+    <string name="rahmat">Rahmat</string>
+    <string name="o_z_vaqtida">O`z vaqtida</string>
 </resources>

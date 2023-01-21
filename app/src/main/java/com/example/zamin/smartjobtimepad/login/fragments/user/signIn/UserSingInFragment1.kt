@@ -5,6 +5,7 @@ import com.example.zamin.smartjobtimepad.app.dialogInfo
 import com.example.zamin.smartjobtimepad.app.setGradiandColor
 import com.example.zamin.smartjobtimepad.databinding.FragmentUserSingIn1Binding
 import com.example.zamin.smartjobtimepad.login.fragments.auth.signIn.QrCodeScanerFragment
+import com.example.zamin.smartjobtimepad.login.fragments.user.check.CheckUserFaceIDFragment
 import com.example.zamin.smartjobtimepad.login.fragments.user.check.CheckUserPinFragment
 
 
@@ -28,6 +29,11 @@ class UserSingInFragment1 : BaseFragment<FragmentUserSingIn1Binding>(FragmentUse
                 requireActivity().supportFragmentManager.beginTransaction().addToBackStack("")
                     .replace(
                         R.id.fragment_login, QrCodeScanerFragment()).commit()
+            }
+            btnFaceId.setOnClickListener {
+                requireActivity().supportFragmentManager.beginTransaction().addToBackStack("")
+                    .replace(
+                        R.id.fragment_login, CheckUserFaceIDFragment()).commit()
             }
 
 

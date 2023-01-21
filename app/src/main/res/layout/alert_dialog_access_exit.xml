@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:paddingVertical="@dimen/pm_40dp"
+    android:paddingHorizontal="@dimen/pm_20dp"
+    android:background="@drawable/bg_dialog"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/flag_uzbekistan" />
+
+        <View
+            android:layout_width="@dimen/pm_30dp"
+            android:layout_height="@dimen/pm_0dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sardor Safarov"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_22sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="@dimen/pm_20dp"
+        android:layout_marginVertical="@dimen/pm_30dp"
+        android:background="#e0e0e0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat4" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fonts_jaldi_bold"
+        android:maxLines="1"
+        android:text="8:45"
+        android:layout_marginVertical="@dimen/pm_20dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_42sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="@string/kirish_vaqti"
+        android:textColor="#788895"
+        android:textSize="@dimen/txt_22sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt1"
+        app:layout_constraintStart_toStartOf="@+id/txt1"
+        app:layout_constraintTop_toBottomOf="@+id/txt1" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pm_30dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/txt2"
+        app:layout_constraintStart_toStartOf="@+id/txt2"
+        app:layout_constraintTop_toBottomOf="@+id/txt2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kirish_09_00"
+            android:textColor="#1F1F1F"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="@dimen/pm_40dp"
+            android:layout_height="@dimen/pm_0dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chiqish_18_00"
+            android:textColor="#1F1F1F"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/pm_20dp"
+
+        android:background="@drawable/bg_access_success"
+        android:gravity="center"
+        android:paddingVertical="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat5">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_success" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/pm_10dp"
+            android:text="@string/o_z_vaqtida" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_qr_code"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/pm_20dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_next"
+        android:elevation="@dimen/pm_0dp"
+        android:fontFamily="@font/fonts_inter2"
+        android:paddingVertical="@dimen/pm_10dp"
+        android:text="@string/rahmat"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_18sp"
+        android:textStyle="bold"
+        app:elevation="@dimen/pm_0dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

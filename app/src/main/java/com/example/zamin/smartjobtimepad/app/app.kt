@@ -11,6 +11,7 @@ import android.util.Log
 import android.widget.LinearLayout
 import android.widget.TextView
 import com.example.zamin.smartjobtimepad.R
+import com.example.zamin.smartjobtimepad.databinding.AlertDialogAccessExitBinding
 import com.example.zamin.smartjobtimepad.databinding.AlertDialogInfoBinding
 
 
@@ -43,3 +44,14 @@ fun dialogInfo(context: Context) {
     }
     dialog.show()
 }
+
+fun dialogAccessExit(context:Context)
+{
+    val dialog = Dialog(context)
+    val view = LinearLayout.inflate(context, R.layout.alert_dialog_access_exit,null)
+    val dialogBinding = AlertDialogAccessExitBinding.bind(view)
+    dialog.setContentView(dialogBinding.root)
+    dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+    dialog.show()
+}
+

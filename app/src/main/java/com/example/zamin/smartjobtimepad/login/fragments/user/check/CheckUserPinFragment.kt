@@ -1,6 +1,7 @@
 package com.example.zamin.smartjobtimepad.login.fragments.user.check
 
 import com.example.zamin.smartjobtimepad.BaseFragment
+import com.example.zamin.smartjobtimepad.app.dialogAccessExit
 import com.example.zamin.smartjobtimepad.app.dialogInfo
 import com.example.zamin.smartjobtimepad.databinding.FragmentCheckUserPinBinding
 
@@ -14,6 +15,12 @@ class CheckUserPinFragment :
         binding.apply {
             btnInfo.setOnClickListener {
                 dialogInfo(requireActivity())
+            }
+            btnAccess.setOnClickListener {
+                dialogAccessExit(requireActivity())
+            }
+            btnExit.setOnClickListener {
+                dialogAccessExit(requireActivity())
             }
         }
     }
