@@ -90,6 +90,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/white"
                     android:hint="@string/faollashtirish_kodi"
+                    android:inputType="number"
                     android:maxLines="1" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>

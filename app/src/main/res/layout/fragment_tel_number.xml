@@ -23,7 +23,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mamlakatni tanlang"
+            android:text="@string/mamlakatni_tanlang"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:gravity="center"
@@ -35,12 +35,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/pm_10dp"
-        android:hint="Qidrish"
-        android:padding="@dimen/pm_20dp"
-        android:layout_marginTop="@dimen/pm_10dp"
+        android:layout_marginTop="@dimen/pm_16dp"
+        android:hint="@string/qidrish"
+        android:inputType="textCapSentences"
+        android:paddingHorizontal="@dimen/pm_20dp"
         android:background="@drawable/bg_line_radius2"
         android:drawableRight="@drawable/ic_baseline_search_24"
         android:layoutDirection="rtl"
+        android:paddingVertical="@dimen/pm_16dp"
         app:iconifiedByDefault="false" />
 
 

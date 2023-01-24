@@ -22,7 +22,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/flag_uzbekistan" />
+            android:src="@drawable/image_1" />
 
         <View
             android:layout_width="@dimen/pm_30dp"

@@ -1,16 +1,18 @@
 package com.example.zamin.smartjobtimepad
 
 import android.Manifest
+import android.content.Context
 import android.content.pm.PackageManager
 import android.graphics.Color
+import android.hardware.camera2.CameraAccessException
+import android.hardware.camera2.CameraManager
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
-import android.view.View
-import android.widget.Button
-import android.widget.ImageView
 import android.widget.Toast
+import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AppCompatActivity
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageCapture
 import androidx.camera.core.ImageCaptureException
@@ -18,6 +20,7 @@ import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.example.zamin.smartjobtimepad.app.D
 import com.example.zamin.smartjobtimepad.databinding.ActivityMainBinding
 import java.io.File
 import java.text.SimpleDateFormat
@@ -25,17 +28,22 @@ import java.util.*
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 
+
 class MainActivity : AppCompatActivity() {
 
     private var imageCapture: ImageCapture? = null
     private lateinit var outputDirectory: File
     private lateinit var cameraExecutor: ExecutorService
     lateinit var binding: ActivityMainBinding
+    private lateinit var cameraManager: CameraManager
+    var flashLightStatus: Boolean = false
+    @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         window.statusBarColor = Color.parseColor("#2b64f3")
+        cameraManager = getSystemService(Context.CAMERA_SERVICE) as CameraManager
         if (allPermissionsGranted()) {
             startCamera()
         } else {
@@ -51,6 +59,37 @@ class MainActivity : AppCompatActivity() {
         binding.btnCancel.setOnClickListener {
             finish()
         }
+        setOnClick()
+    }
+
+    @RequiresApi(Build.VERSION_CODES.M)
+    private fun setOnClick() {
+        binding.apply {
+            btnFlash.setOnClickListener {
+              openFlashLight()
+            }
+        }
+    }
+
+    @RequiresApi(Build.VERSION_CODES.M)
+    private fun openFlashLight() {
+        val cameraManager = getSystemService(Context.CAMERA_SERVICE) as CameraManager
+        val cameraId = cameraManager.cameraIdList[0]
+        if (!flashLightStatus) {
+            try {
+                cameraManager.setTorchMode(cameraId, true)
+                flashLightStatus = true
+
+            } catch (e: CameraAccessException) {
+            }
+        } else {
+            try {
+                cameraManager.setTorchMode(cameraId, false)
+                flashLightStatus = false
+            } catch (e: CameraAccessException) {
+            }
+        }
+
     }
 
     private fun takePhoto() {
@@ -98,7 +137,6 @@ class MainActivity : AppCompatActivity() {
 
             // Used to bind the lifecycle of cameras to the lifecycle owner
             val cameraProvider: ProcessCameraProvider = cameraProviderFuture.get()
-
             // Preview
             val preview = Preview.Builder()
                 .build()
@@ -142,8 +180,9 @@ class MainActivity : AppCompatActivity() {
 
     // checks the camera permission
     override fun onRequestPermissionsResult(
-        requestCode: Int, permissions: Array<String>, grantResults:
-        IntArray
+        requestCode: Int, permissions: Array<String>,
+        grantResults:
+        IntArray,
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         if (requestCode == REQUEST_CODE_PERMISSIONS) {
@@ -154,7 +193,8 @@ class MainActivity : AppCompatActivity() {
                 // If permissions are not granted,
                 // present a toast to notify the user that
                 // the permissions were not granted.
-                Toast.makeText(this, "Permissions not granted by the user.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Permissions not granted by the user.", Toast.LENGTH_SHORT)
+                    .show()
                 finish()
             }
         }

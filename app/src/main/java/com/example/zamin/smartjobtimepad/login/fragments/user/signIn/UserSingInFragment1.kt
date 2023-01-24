@@ -1,5 +1,11 @@
 package com.example.zamin.smartjobtimepad.login.fragments.user.signIn
+import android.content.Context
 import android.content.Intent
+import android.hardware.camera2.CameraAccessException
+import android.hardware.camera2.CameraManager
+import android.os.Build
+import androidx.annotation.RequiresApi
+import androidx.core.content.ContextCompat.getSystemService
 import com.example.zamin.smartjobtimepad.BaseFragment
 import com.example.zamin.smartjobtimepad.MainActivity
 import com.example.zamin.smartjobtimepad.R
@@ -33,12 +39,14 @@ class UserSingInFragment1 : BaseFragment<FragmentUserSingIn1Binding>(FragmentUse
                         R.id.fragment_login, QrCodeScanerFragment()).commit()
             }
             btnFaceId.setOnClickListener {
-             startActivity(Intent(requireContext(),MainActivity::class.java))
+                startActivity(Intent(requireContext(),MainActivity::class.java))
             }
 
 
         }
     }
+
+
 
 
 }

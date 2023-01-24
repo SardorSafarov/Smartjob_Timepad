@@ -99,10 +99,10 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
-            android:layout_width="406dp"
-            android:layout_height="358dp"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/ic_ellipse2"
+            android:background="@drawable/ic_ellipse3"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="@dimen/pm_50dp"

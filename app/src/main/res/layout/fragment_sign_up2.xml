@@ -136,7 +136,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:backgroundTint="@color/white"
-                        android:drawableEnd="@drawable/ic_strelca_buttom"
                         android:hint="@string/parol"
                         android:maxLines="1" />
 

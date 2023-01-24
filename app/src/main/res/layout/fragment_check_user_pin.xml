@@ -96,7 +96,8 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/white"
                     android:hint="@string/pin_kodni_kiring"
-                    android:inputType="phone"
+                    android:inputType="number"
+                    android:maxLength="4"
                     android:maxLines="1" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
@@ -109,28 +110,30 @@
                 android:text="@string/parol"
                 android:textColor="#1f1f1f" />
 
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/pm_10dp"
-                android:background="@drawable/bg_line_radius2"
-                android:gravity="center_vertical"
-                android:paddingHorizontal="@dimen/pm_10dp">
 
 
-                <EditText
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/white"
+                    app:passwordToggleEnabled="true"
                     android:hint="@string/parol_kiriting"
-                    android:inputType="phone"
-                    android:maxLines="1" />
+                    app:boxStrokeColor="@color/btn_next_color"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="numberPassword"
+                        android:textColorHint="@color/btn_next_color"
+                        android:maxLength="4"
+                        android:maxLines="1" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-            </androidx.appcompat.widget.LinearLayoutCompat>
+
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
-                android:layout_marginTop="@dimen/pm_20dp"
+                android:layout_marginTop="@dimen/pm_30dp"
                 android:layout_height="wrap_content">
 
                 <androidx.appcompat.widget.AppCompatButton
