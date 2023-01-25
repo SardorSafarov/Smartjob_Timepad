@@ -126,7 +126,7 @@
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/pm_56dp"
                 android:layout_marginTop="@dimen/pm_10dp"
                 android:background="@drawable/bg_line_radius2"
                 android:gravity="center_vertical"
@@ -153,7 +153,7 @@
                         android:src="@drawable/ic_strelca_buttom" />
 
                     <View
-                        android:layout_width="2dp"
+                        android:layout_width="1.5dp"
                         android:layout_height="match_parent"
                         android:layout_marginVertical="@dimen/pm_10dp"
                         android:background="@color/color_line" />
@@ -188,7 +188,6 @@
                 android:elevation="@dimen/pm_0dp"
                 android:background="@drawable/bg_btn_next"
                 app:elevation="@dimen/pm_0dp"
-
                 android:fontFamily="@font/fonts_inter2"
                 android:text="Davom etish"
                 android:textAllCaps="false"

@@ -71,75 +71,62 @@
                     android:text="@string/fio"
                     android:textColor="#1f1f1f" />
 
-                <androidx.appcompat.widget.LinearLayoutCompat
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/pm_10dp"
-                    android:background="@drawable/bg_line_radius2"
-                    android:gravity="center_vertical"
-                    android:paddingHorizontal="@dimen/pm_10dp">
-
-
-                    <EditText
+                    android:hint="@string/fio_ni_kiriting"
+                    style="@style/CustomerEditText"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="@color/white"
-                        android:hint="@string/fio_ni_kiriting"
+                        android:layout_height="match_parent"
                         android:maxLines="1" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
-                    android:layout_marginTop="@dimen/pm_20dp"
                     android:text="@string/parol_kiriting"
                     android:textColor="#1f1f1f" />
 
-                <androidx.appcompat.widget.LinearLayoutCompat
+
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/pm_10dp"
-                    android:background="@drawable/bg_line_radius2"
-                    android:gravity="center_vertical"
-                    android:paddingHorizontal="@dimen/pm_10dp">
-
-
-                    <EditText
+                    android:hint="@string/parol"
+                    style="@style/CustomerEditText"
+                    app:passwordToggleEnabled="true"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="@color/white"
-                        android:hint="@string/parol"
+                        android:layout_height="match_parent"
+                        android:inputType="textPassword"
                         android:maxLines="1" />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
-                    android:layout_marginTop="@dimen/pm_20dp"
                     android:text="@string/parolni_qayta_kiriting"
                     android:textColor="#1f1f1f" />
 
-                <androidx.appcompat.widget.LinearLayoutCompat
+
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/pm_10dp"
-                    android:background="@drawable/bg_line_radius2"
-                    android:gravity="center_vertical"
-                    android:paddingHorizontal="@dimen/pm_10dp">
-
-
-                    <EditText
+                    android:hint="@string/parol"
+                    app:passwordToggleEnabled="true"
+                    style="@style/CustomerEditText"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:backgroundTint="@color/white"
-                        android:hint="@string/parol"
+                        android:layout_height="match_parent"
+                        android:inputType="textPassword"
                         android:maxLines="1" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-                </androidx.appcompat.widget.LinearLayoutCompat>
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btn_next"

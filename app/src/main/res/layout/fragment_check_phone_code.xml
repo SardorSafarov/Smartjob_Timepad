@@ -76,24 +76,21 @@
                 android:text="@string/kodni_kiriting"
                 android:textColor="#1f1f1f" />
 
-            <androidx.appcompat.widget.LinearLayoutCompat
+
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/pm_10dp"
-                android:background="@drawable/bg_line_radius2"
-                android:gravity="center_vertical"
-                android:paddingHorizontal="@dimen/pm_10dp">
-
-
-                <EditText
+                android:hint="@string/faollashtirish_kodi"
+                style="@style/CustomerEditText"
+                >
+                <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/white"
-                    android:hint="@string/faollashtirish_kodi"
+                    android:layout_height="match_parent"
                     android:inputType="number"
+                    android:maxLength="4"
                     android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-            </androidx.appcompat.widget.LinearLayoutCompat>
 
 
             <TextView
