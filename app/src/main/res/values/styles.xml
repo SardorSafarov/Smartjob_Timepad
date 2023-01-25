@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="EditTextStyle" parent="Widget.Design.TextInputLayout">
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="CustomerEditText" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox" tools:ignore="ResourceCycle">
+        <item name="boxStrokeColor">@color/btn_next_color</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/pm_10dp</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/pm_10dp</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/pm_10dp</item>
+        <item name="boxCornerRadiusTopStart">@dimen/pm_10dp</item>
+        <item name="android:layout_marginTop">@dimen/pm_10dp</item>
+        <item name="android:layout_marginBottom">@dimen/pm_20dp</item>
+        <item name="colorAccent">#e0e0e0</item>
+        <item name="hintTextColor">@color/btn_next_color</item>
     </style>
-    
+
 </resources>
