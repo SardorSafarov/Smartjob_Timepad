@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.zamin.smartjobtimepad.R
 import com.example.zamin.smartjobtimepad.databinding.ActivityLoginBinding
 import com.example.zamin.smartjobtimepad.login.fragments.auth.signIn.SignInFragment
+import com.example.zamin.smartjobtimepad.login.fragments.auth.signUp.SignUpFragment
 
 
 class LoginActivity : AppCompatActivity() {
@@ -14,6 +15,6 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
         supportFragmentManager.beginTransaction().replace(R.id.fragment_login,
-            SignInFragment()).commit()
+            SignUpFragment()).commit()
     }
 }

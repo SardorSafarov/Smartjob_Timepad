@@ -85,12 +85,12 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/pin_kodni_kiring"
                 style="@style/CustomerEditText"
                 >
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:hint="@string/pin_kodni_kiring"
                     android:inputType="number"
                     android:maxLength="4"
                     android:maxLines="1" />
@@ -110,12 +110,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:passwordToggleEnabled="true"
-                    android:hint="@string/parol_kiriting"
                     style="@style/CustomerEditText"
                     >
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:hint="@string/parol_kiriting"
                         android:inputType="numberPassword"
                         android:maxLength="4"
                         android:maxLines="1" />

@@ -8,6 +8,7 @@ import com.example.zamin.smartjobtimepad.databinding.FragmentCheckUserFaceIDBind
 class CheckUserFaceIDFragment : BaseFragment<FragmentCheckUserFaceIDBinding>(FragmentCheckUserFaceIDBinding::inflate) {
 
     override fun onViewCreate() {
+
         }
 
 

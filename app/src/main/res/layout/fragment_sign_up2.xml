@@ -74,10 +74,11 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/fio_ni_kiriting"
+
                     style="@style/CustomerEditText"
                     >
                     <com.google.android.material.textfield.TextInputEditText
+                        android:hint="@string/fio_ni_kiriting"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:maxLines="1" />
@@ -94,11 +95,13 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/parol"
+
                     style="@style/CustomerEditText"
                     app:passwordToggleEnabled="true"
                     >
+
                     <com.google.android.material.textfield.TextInputEditText
+                        android:hint="@string/parol"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:inputType="textPassword"
@@ -116,11 +119,13 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/parol"
+
                     app:passwordToggleEnabled="true"
                     style="@style/CustomerEditText"
                     >
+
                     <com.google.android.material.textfield.TextInputEditText
+                        android:hint="@string/parol"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:inputType="textPassword"
