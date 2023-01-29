@@ -8,6 +8,7 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.example.zamin.smartjobtimepad.BaseFragment
 import com.example.zamin.smartjobtimepad.R
+import com.example.zamin.smartjobtimepad.app.dialogHelp
 import com.example.zamin.smartjobtimepad.app.setGradiandColor
 import com.example.zamin.smartjobtimepad.databinding.FragmentSignInBinding
 import com.example.zamin.smartjobtimepad.login.fragments.auth.signUp.SignUpFragment
@@ -39,6 +40,9 @@ class SignInFragment : BaseFragment<FragmentSignInBinding>(FragmentSignInBinding
             btnNext.setOnClickListener {
                 requireActivity().supportFragmentManager.beginTransaction().addToBackStack(null).replace(
                     R.id.fragment_login, UserSingInFragment1()).commit()
+            }
+            btnHelp.setOnClickListener {
+                dialogHelp(requireContext())
             }
         }
 

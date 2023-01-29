@@ -15,6 +15,6 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
         supportFragmentManager.beginTransaction().replace(R.id.fragment_login,
-            SignUpFragment()).commit()
+            SignInFragment()).commit()
     }
 }
