@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/language_uz"
+        android:title="O’zbekcha"
+        android:icon="@drawable/flag_uzbekistan"
+        >
+    </item>
+    <item
+        android:id="@+id/language_ru"
+        android:title="Русский"
+        android:icon="@drawable/flag_ru"
+        >
+    </item>
+    <item
+        android:id="@+id/language_en"
+        android:title="English"
+        android:icon="@drawable/flag_en"
+        >
+    </item>
+</menu>

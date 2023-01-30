@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
+        android:paddingVertical="@dimen/pm_10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -29,23 +30,30 @@
             android:layout_height="1dp"
             android:layout_weight="1" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/btn_language"
             android:layout_width="wrap_content"
-            android:textColorHint="@color/white"
-            android:background="@color/white"
-            android:layout_height="wrap_content">
-
-            <AutoCompleteTextView
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/language_image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:inputType="none"
-                android:background="@color/white"
-                android:backgroundTint="@color/white"
-                android:paddingBottom="20dp"
-                android:gravity="center_vertical"
-                android:text="Sardor" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:src="@drawable/flag_uzbekistan" />
+
+            <TextView
+                android:id="@+id/language_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/pm_6dp"
+                android:text="O'zbekcha"
+                android:textColor="#2B2D33" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_strelca_buttom" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
