@@ -83,13 +83,11 @@
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/linearLayoutCompat2"
-            android:layout_width="350dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/pm_10dp"
             android:background="@drawable/bg_line_radius"
             android:gravity="center"
-            android:maxWidth="100dp"
-            android:minWidth="330dp"
             android:orientation="vertical"
             android:padding="@dimen/pm_20dp"
             app:layout_constraintBottom_toBottomOf="parent"

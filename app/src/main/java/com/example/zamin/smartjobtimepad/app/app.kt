@@ -62,5 +62,8 @@ fun dialogHelp(context:Context)
     val dialogBinding = AlertDialogHelpBinding.bind(view)
     dialog.setContentView(dialogBinding.root)
     dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+    dialogBinding.btnCancel.setOnClickListener {
+        dialog.dismiss()
+    }
     dialog.show()
 }
